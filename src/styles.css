@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: rgb(55, 74, 160);
+    --branco: rgb(255, 255, 255);
+    --cinza: rgb(140, 140, 140);
+    --laranja: rgb(238, 132, 10);
+    --preto: rgb(0, 0, 0);
+    --roxo: rgb(117, 36, 192);
+    --verde: rgb(63, 190, 63);
+    --vermelho: rgb(194, 50, 50);
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.botao {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.confirmar {
+    background-color: var(--preto);
+    border-color: var(--preto);
+}
+
+.confirmar:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+button[disabled] {
+    background-color: var(--cinza);
+    border-color: var(--cinza);
+}
+
+button[disabled]:hover {
+    cursor: not-allowed;
+    color: var(--cinza);
+}
