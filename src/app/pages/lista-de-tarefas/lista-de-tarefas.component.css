@@ -1,0 +1,284 @@
+#qtd-tarefas {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#container-botao-adicionar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: var(--branco);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    list-style: none;
+    border: 2px solid var(--preto);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#container-botoes-tarefa {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+li span {
+    font-size: 20px;
+    width: 70%;
+}
+
+#adicionar {
+    background-color: var(--verde);
+    border-color: var(--verde);
+}
+
+#adicionar:hover {
+    background-color: var(--branco);
+    color: var(--verde);
+}
+
+#marcar-como-concluida {
+    background-color: var(--roxo);
+    border-color: var(--roxo);
+}
+
+#marcar-como-concluida:hover {
+    background-color: var(--branco);
+    color: var(--roxo);
+    cursor: pointer;
+}
+
+#editar {
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+#editar:hover {
+    background-color: var(--branco);
+    color: var(--azul);
+}
+
+#marcar-como-nao-concluida {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+}
+
+#marcar-como-nao-concluida:hover {
+    background-color: var(--branco);
+    color: var(--laranja);
+    cursor: pointer;
+}
+
+#excluir {
+    background-color: var(--vermelho);
+    border-color: var(--vermelho);
+}
+
+#excluir:hover {
+    background-color: var(--branco);
+    color: var(--vermelho);
+}
+
+.riscada {
+    border: 2px solid var(--cinza);
+}
+
+.riscada span {
+    color: var(--cinza);
+    text-decoration: line-through;
+}
+
+@media (max-width: 1325px) {
+
+    #container-botoes-tarefa {
+        width: 40%;
+    }
+
+    li span {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 1020px) {
+
+    #container-botoes-tarefa {
+        width: 50%;
+    }
+
+    li span {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 810px) {
+
+    #container-botoes-tarefa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #marcar-como-concluida, #editar {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #marcar-como-nao-concluida {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 713px) {
+
+    #marcar-como-nao-concluida {
+        width: 217px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 688px) {
+
+    #marcar-como-nao-concluida {
+        width: max-content;
+    }
+
+}
+
+@media (max-width: 653px) {
+
+    #marcar-como-concluida {
+        width: 188px;
+        margin-right: 0px;
+    }
+
+    #editar {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 628px) {
+
+    #marcar-como-concluida {
+        width: max-content;
+    }
+    
+}
+
+@media (max-width: 517px) {
+
+    li {
+        display: block;
+    }
+
+    li span {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #container-botoes-tarefa {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #marcar-como-concluida {
+        margin-bottom: 0px;
+    }
+
+    #editar {
+        margin-right: 0px;
+    }
+
+    #marcar-como-nao-concluida {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    #container-botoes-tarefa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #marcar-como-concluida {
+        width: 179px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    #editar {
+        margin-bottom: 10px;
+    }
+
+    #marcar-como-nao-concluida {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 399px) {
+
+    #marcar-como-concluida {
+        width: max-content;
+    }
+
+}
+
+@media (max-width: 356px) {
+
+    #marcar-como-nao-concluida {
+        width: 217px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 344px) {
+
+    #marcar-como-nao-concluida {
+        width: max-content;
+    }
+
+}
+
+@media (max-width: 314px) {
+
+    #marcar-como-concluida {
+        width: 188px;
+        margin-right: 0px;
+    }
+
+    #editar {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 301px) {
+
+    #marcar-como-concluida {
+        width: max-content;
+    }
+
+}
