@@ -1,1 +1,18 @@
-<p>lista-de-tarefas works!</p>
+<p id="qtd-tarefas">Quantidade de tarefas na lista: {{numeroDeTarefas}}</p>
+<div id="container-botao-adicionar">
+    <a [routerLink]="['/adicionar-tarefa']" class="botao" id="adicionar">Adicionar tarefa</a>
+</div>
+<ul *ngFor="let tarefa of listaDeTarefas">
+    <li [class.riscada]="tarefa.concluida">
+        <span>{{tarefa.descricao}}</span>
+        <div id="container-botoes-tarefa">
+            @if (!tarefa.concluida) {
+                <button (click)="atualizarPropriedadeConcluida(tarefa)" class="botao" id="marcar-como-concluida">Marcar como concluída</button>
+                <a [routerLink]="['/editar', tarefa.id]" class="botao" id="editar">Editar</a>
+            } @else {
+                <button (click)="atualizarPropriedadeConcluida(tarefa)" class="botao" id="marcar-como-nao-concluida">Marcar como não concluída</button>
+            }
+            <a [routerLink]="['/excluir', tarefa.id]" class="botao" id="excluir">Excluir</a>
+        </div>
+    </li>
+</ul>
