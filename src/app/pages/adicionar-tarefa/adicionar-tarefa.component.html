@@ -1,1 +1,11 @@
-<p>adicionar-tarefa works!</p>
+<h2>Adicionar tarefa</h2>
+<form (ngSubmit)="adicionarTarefa()" #formularioAdicionar="ngForm">
+    <div id="container-input">
+        <label for="descricao">Descrição da tarefa:</label>
+        <input id="descricao" name="campoDescricao" required type="text" [(ngModel)]="tarefa.descricao" #campoDescricao="ngModel" minlength="3" maxlength="25">
+    </div>
+    <p class="alerta" [hidden]="campoDescricao.valid || campoDescricao.pristine">A descrição da tarefa não pode conter menos de 3 caracteres!</p>
+    <div id="container-botao">
+        <button [disabled]="!campoDescricao.valid || campoDescricao.pristine" class="botao confirmar" type="submit">Confirmar</button>
+    </div>
+</form>
