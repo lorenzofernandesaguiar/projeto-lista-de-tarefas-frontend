@@ -828,3 +828,13 @@ Nesse ponto, ainda dentro dessa mesma página de exclusão de tarefa, eu cliquei
 Vale lembrar que a tarefa que eu excluí tinha o id igual a 2. Sendo assim, dentro do pgAdmin 4, ao acessar a tabela tarefas, eu constatei que foi removido o registro correspondente à tarefa cujo id era igual a 2. Isso pode ser visto na captura de tela abaixo.
 
 ![Essa captura de tela mostra que, dentro da tabela tarefas, foi removido o registro correspondente à tarefa cujo id era igual a 2](https://github.com/user-attachments/assets/c4dcc149-7d57-41e3-9dcf-03254a215c12)
+
+## Tópico 8: Considerações finais
+
+Eu sinceramente espero que, através do relato acima, eu tenha conseguido comprovar minhas habilidades e meus conhecimentos para as empresas que estão precisando de um desenvolvedor de software.
+
+Conforme eu já falei no início do presente texto, eu realizei o projeto Lista de tarefas com o intuito de ganhar a experiência que eu preciso para ingressar no mercado de trabalho como desenvolvedor de software. Por causa disso, durante todo o tempo em que eu me dediquei para concluir o projeto Lista de tarefas, eu procurei fortalecer meus conhecimentos técnicos e minhas habilidades relacionadas ao trabalho em equipe.
+
+A fim de fortalecer meus conhecimentos técnicos, eu pesquisei de maneira aprofundada sobre as tecnologias que seriam necessárias para concluir o projeto Lista de tarefas. Desse modo, ao longo do presente texto, eu expliquei com detalhes a lógica que estava por trás de cada código que eu escrevi.
+
+A fim de fortalecer minhas habilidades relacionadas ao trabalho em equipe, eu, mesmo desenvolvendo sozinho o projeto Lista de tarefas, adotei práticas que facilitam o trabalho em um cenário no qual várias pessoas estão contribuindo com uma parte do código. Desse modo, através do Git, eu realizei o controle de versão dos arquivos relacionados ao projeto Lista de tarefas. Além disso, eu escrevi comentários na maior parte dos códigos que eu escrevi, pois isso torna o código mais compreensível.
