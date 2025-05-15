@@ -614,3 +614,117 @@ Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, de
 O código CSS que eu escrevi para o arquivo excluir-tarefa.component.css pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/pages/excluir-tarefa/excluir-tarefa.component.css>. Cabe ressaltar que o código CSS que eu escrevi para o arquivo excluir-tarefa.component.css está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
 
 Depois que eu escrevi o código CSS para o arquivo excluir-tarefa.component.css, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/ee822f04e6f151fe358acd00e62d85fcfdc71499>.
+
+## Tópico 6: Testes unitários para validar o front-end da aplicação web
+
+Os subtópicos seguintes relatam as etapas que eu segui para escrever os testes unitários que devem validar o front-end da aplicação web do projeto Lista de tarefas.
+
+### Subtópico 6.1: Arquivo app.component.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Essa última pasta já contava com o arquivo app.component.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo app.component.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/app.component.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo app.component.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo app.component.spec.ts, vale destacar que:
+
+* O arquivo app.component.spec.ts contém os testes unitários que devem validar o componente AppComponent.
+* A função decribe serve para criar um grupo de especificações. Cada uma dessas especificações é representada pela função it. A função it contém uma ou mais expectativas que testam o código que foi fornecido.
+* A função beforeEach evita a repetição de código, pois permite que as configurações contidas dentro da referida função sejam executadas antes de cada função it.
+* Dentro da função beforeEach, eu chamei o método configureTestingModule do TestBed. Desse modo, eu pude importar o componente AppComponent. Depois, eu chamei o método compileComponents do TestBed. O método compileComponents compila todos os componentes configurados.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo app.component.spec.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/63c3a9be9e7627a1abbaac03f15683446866f91c>.
+
+### Subtópico 6.2: Arquivo tarefa.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta models. Nessa última pasta, eu acessei o arquivo tarefa.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo tarefa.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/models/tarefa.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo tarefa.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo tarefa.spec.ts, vale destacar que o referido arquivo contém o teste unitário que deve validar a classe Tarefa.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo tarefa.spec.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/2ea206a2e305c7bfdd0f6e312850d847bb45b555>.
+
+### Subtópico 6.3: Arquivo db.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Nessa última pasta, eu criei a pasta db. Na pasta db, eu criei o arquivo db.ts.
+
+O código TypeScript que eu escrevi para o arquivo db.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/db/db.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo db.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo db.ts, vale destacar que a constante mockListaDeTarefas simula uma lista de tarefas armazenada em um banco de dados. Essa constante será utilizada pelo mock do serviço TarefaService.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo db.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/c550bf90b4caf722aaff16ae5c6156f340eef208>.
+
+### Subtópico 6.4: Arquivo mocktarefaservice.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Nessa última pasta, eu criei a pasta mocks. Na pasta mocks, eu criei o arquivo mocktarefaservice.ts.
+
+O código TypeScript que eu escrevi para o arquivo mocktarefaservice.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/mocks/mocktarefaservice.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo mocktarefaservice.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo mocktarefaservice.ts, vale destacar que eu criei a classe MockTarefaService. O papel dessa classe é servir como mock do serviço TarefaService, ou seja, a classe MockTarefaService deve simular o comportamento dos métodos do serviço TarefaService que se comunicam com a API REST.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo mocktarefaservice.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/96b52ca7a272f45afc85883fb6de923dfdca2a6e>.
+
+### Subtópico 6.5: Arquivo tarefa.service.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta services. Nessa última pasta, eu acessei o arquivo tarefa.service.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo tarefa.service.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/services/tarefa.service.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo tarefa.service.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo tarefa.service.spec.ts, vale destacar que:
+
+* O arquivo tarefa.service.spec.ts contém os testes unitários que devem validar o serviço TarefaService.
+* A função provideHttpClient e a função provideHttpClientTesting configuram o serviço HttpClient para usar um back-end de teste.
+* A função afterEach evita a repetição de código, pois permite que as configurações contidas dentro da referida função sejam executadas depois de cada função it.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo tarefa.service.spec.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/6ca5a5e58a4a9385f905e98645713190d96fe8a4>.
+
+### Subtópico 6.6: Arquivo lista-de-tarefas.component.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta pages e, depois, eu fui até a pasta lista-de-tarefas. Nessa última pasta, eu acessei o arquivo lista-de-tarefas.component.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo lista-de-tarefas.component.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/pages/lista-de-tarefas/lista-de-tarefas.component.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo lista-de-tarefas.component.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo lista-de-tarefas.component.spec.ts, vale destacar que:
+
+* O arquivo lista-de-tarefas.component.spec.ts contém os testes unitários que devem validar o componente ListaDeTarefasComponent.
+* Eu adicionei o provideRouter, pois o usuário pode navegar para outros componentes clicando em botões do componente ListaDeTarefasComponent.
+* Para a realização dos testes, eu indiquei que o componente ListaDeTarefasComponent deve usar MockTarefaService no lugar de TarefaService.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo lista-de-tarefas.component.spec.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/4913fdcdfe258466cedebf917f0c7df854fdfd58>.
+
+### Subtópico 6.7: Arquivo adicionar-tarefa.component.spec.ts
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta pages e, depois, eu fui até a pasta adicionar-tarefa. Nessa última pasta, eu acessei o arquivo adicionar-tarefa.component.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo adicionar-tarefa.component.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/pages/adicionar-tarefa/adicionar-tarefa.component.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo adicionar-tarefa.component.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo adicionar-tarefa.component.spec.ts, vale destacar que o referido arquivo contém os testes unitários que devem validar o componente AdicionarTarefaComponent.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo adicionar-tarefa.component.spec.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/027a8f8f9ec7e989b1d4b85fd4c6d5c187dda3fc>.
+
+### Subtópico 6.8: Arquivo editar-tarefa.component.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta pages e, depois, eu fui até a pasta editar-tarefa. Nessa última pasta, eu acessei o arquivo editar-tarefa.component.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo editar-tarefa.component.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/pages/editar-tarefa/editar-tarefa.component.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo editar-tarefa.component.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo editar-tarefa.component.spec.ts, vale destacar que o referido arquivo contém os testes unitários que devem validar o componente EditarTarefaComponent.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo editar-tarefa.component.spec.ts.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/de512ac187f1077eeaf6f28d11fd64b1452dac4a>.
+
+### Subtópico 6.9: Arquivo excluir-tarefa.component.spec.ts
+
+Dentro da pasta projeto-lista-de-tarefas-frontend, eu fui até a pasta src e, depois, eu fui até a pasta app. Em seguida, eu fui até a pasta pages e, depois, eu fui até a pasta excluir-tarefa. Nessa última pasta, eu acessei o arquivo excluir-tarefa.component.spec.ts.
+
+O código TypeScript que eu escrevi para o arquivo excluir-tarefa.component.spec.ts pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/blob/main/src/app/pages/excluir-tarefa/excluir-tarefa.component.spec.ts>. Cabe ressaltar que o código TypeScript que eu escrevi para o arquivo excluir-tarefa.component.spec.ts está hospedado no meu repositório chamado projeto-lista-de-tarefas-frontend.
+
+Sobre o código TypeScript que eu escrevi para o arquivo excluir-tarefa.component.spec.ts, vale destacar que o referido arquivo contém os testes unitários que devem validar o componente ExcluirTarefaComponent.
+
+Depois que eu escrevi o código TypeScript para o arquivo arquivo excluir-tarefa.component.spec.ts.ts, eu fiz um commit para que o referido arquivo fosse atualizado dentro do meu repositório chamado projeto-lista-de-tarefas-frontend. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-frontend/commit/3eb5298ba15125d278edb73821469b9ca6ae27a8>.
+
+### Subtópico 6.10: Rodando os testes unitários para validar o front-end da aplicação web
+
+Eu abri um terminal integrado dentro do Visual Studio Code e digitei o comando ng test. Feito isso, os testes unitários escritos ao longo dos tópicos anteriores começaram a rodar.
+
+Todos os testes obtiveram sucesso, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que foram bem sucedidos os testes unitários que devem validar o front-end da aplicação web](https://github.com/user-attachments/assets/4fda791a-5665-4b6f-9cc4-60a94f5b61a7)
