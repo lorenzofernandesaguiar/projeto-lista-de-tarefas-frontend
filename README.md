@@ -728,3 +728,103 @@ Eu abri um terminal integrado dentro do Visual Studio Code e digitei o comando n
 Todos os testes obtiveram sucesso, conforme pode ser visto na captura de tela abaixo.
 
 ![Essa captura de tela mostra que foram bem sucedidos os testes unitários que devem validar o front-end da aplicação web](https://github.com/user-attachments/assets/4fda791a-5665-4b6f-9cc4-60a94f5b61a7)
+
+## Tópico 7: Utilizando a aplicação web
+
+Depois de concluir todas as etapas do projeto Lista de tarefas, eu resolvi utilizar a aplicação web do projeto Lista de tarefas.
+
+Primeiramente, eu comecei a rodar a API REST do projeto Lista de tarefas. Para isso, eu, dentro do meu workspace do Spring Tool Suite, tomei providências para que a API REST fosse rodada com o perfil local.
+
+A captura de tela abaixo mostra o console do Spring Tool Suite depois que eu rodei a API REST do projeto Lista de tarefas.
+
+![Essa captura de tela mostra o console do Spring Tool Suite depois que eu rodei a API REST do projeto Lista de tarefas](https://github.com/user-attachments/assets/8b0ac458-3511-43aa-ab18-db5232fb3ebe)
+
+Em seguida, eu comecei a rodar o front-end da aplicação web do projeto Lista de tarefas. Para isso, eu, dentro do Visual Studio Code, abri um terminal integrado e digitei o comando ng serve.
+
+A captura de tela abaixo mostra o terminal do Visual Studio Code depois que eu rodei o front-end da aplicação web do projeto Lista de tarefas.
+
+![Essa captura de tela mostra o terminal do Visual Studio Code depois que eu rodei o front-end da aplicação web do projeto Lista de tarefas](https://github.com/user-attachments/assets/d572c7db-6b72-4700-973d-e67e86b86aec)
+
+Dentro do navegador, eu visitei a página principal da aplicação web. Inicialmente, essa página não tinha tarefas adicionadas, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página principal da aplicação web estava sem tarefas adicionadas](https://github.com/user-attachments/assets/6df25475-3b15-4ea6-b450-e2889b6a3466)
+
+Dentro do pgAdmin 4, eu acessei a tabela tarefas correspondente ao banco de dados chamado projetolistadetarefasbancodedados. Inicialmente, essa tabela estava vazia, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a tabela tarefas estava vazia](https://github.com/user-attachments/assets/07cc830e-99dd-42d1-89ca-2c38a21262f5)
+
+De volta ao navegador, eu continuava dentro da página principal da aplicação web. Porém, eu cliquei no botão Adicionar tarefa e fui direcionado para a página de adição de tarefa. Nessa página, eu tentei adicionar uma tarefa cuja descrição continha apenas dois caracteres. Por causa disso, a aplicação web me mostrou uma mensagem de alerta, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra a mensagem de alerta que foi exibida pela página de adição de tarefa](https://github.com/user-attachments/assets/a2856060-4f92-43ba-b9fe-3f3bb454dbe3)
+
+Vale lembrar que a página de adição de tarefa consegue se adaptar a um tamanho de tela reduzido. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página de adição de tarefa consegue se adaptar a um tamanho de tela reduzido](https://github.com/user-attachments/assets/f5bf7bcf-f2e0-435d-ba70-daccca37365a)
+
+Ainda dentro da página de adição de tarefa, eu escrevi no campo input a descrição Agendar reunião. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra a página de adição de tarefa depois que eu escrevi no campo input a descrição Agendar reunião](https://github.com/user-attachments/assets/a8cce059-5dd1-48a5-9196-a60c32ecda7b)
+
+Nesse ponto, eu cliquei no botão Confirmar. Assim, eu fui redirecionado para a página principal. Essa página passou a contar com a tarefa cuja descrição é Agendar reunião. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página principal passou a contar com a tarefa cuja descrição é Agendar reunião](https://github.com/user-attachments/assets/d421f7f9-a25a-4418-b721-1c7400f3395d)
+
+Dentro do pgAdmin 4, eu constatei que a tarefa cuja descrição é Agendar reunião foi incluída com sucesso na tabela tarefas. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a tarefa cuja descrição é Agendar reunião foi incluída com sucesso na tabela tarefas](https://github.com/user-attachments/assets/b3560c6e-db40-449c-a26d-3167c7ff5198)
+
+De volta ao navegador, eu adicionei outras duas tarefas dentro da aplicação web. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra as outras duas tarefas que eu adicionei dentro da aplicação web](https://github.com/user-attachments/assets/2f0ef5f4-4fe2-4112-9786-1676ea3108f8)
+
+Dentro do pgAdmin 4, eu constatei que essas outras duas tarefas também foram incluídas com sucesso na tabela tarefas. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que outras duas tarefas foram incluídas com sucesso na tabela tarefas](https://github.com/user-attachments/assets/86a9bc78-0948-4137-b696-de4febf5dc16)
+
+De volta ao navegador, eu marquei como concluída a tarefa cuja descrição é Ler um livro. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que foi marcada como concluída a tarefa cuja descrição é Ler um livro](https://github.com/user-attachments/assets/b2146414-888c-43a2-b1d5-75cd81c5e9f2)
+
+Dentro do pgAdmin 4, ao acessar a tabela tarefas, eu constatei que houve alteração no campo concluida correspondente à tarefa cuja descrição é Ler um livro. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que, dentro da tabela tarefas, houve alteração no campo concluida correspondente à tarefa cuja descrição é Ler um livro](https://github.com/user-attachments/assets/f8ac278b-725b-4d8e-ba06-704578491ab7)
+
+De volta ao navegador, vale lembrar que a página principal consegue se adaptar a um tamanho de tela reduzido. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página principal consegue se adaptar a um tamanho de tela reduzido](https://github.com/user-attachments/assets/98f1d6b9-7f9c-42f5-bec8-16ee72186a98)
+
+Ainda dentro da página principal da aplicação web, eu cliquei no botão Editar que corresponde à tarefa cuja descrição é Concluir relatório. Desse modo, eu fui direcionado para a página de edição de tarefa. A captura de tela abaixo mostra como se encontrava a página de edição de tarefa correspondente à tarefa cuja descrição é Concluir relatório.
+
+![Essa captura de tela mostra como se encontrava a página de edição de tarefa correspondente à tarefa cuja descrição é Concluir relatório](https://github.com/user-attachments/assets/4341bd50-2303-455d-af31-d2e45a0b0b8f)
+
+Ainda dentro dessa mesma página de edição de tarefa, eu acrescentei a palavra hoje no campo input. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que, dentro da referida página de edição de tarefa, eu acrescentei a palavra hoje no campo input](https://github.com/user-attachments/assets/6c1d28b7-47bb-4690-9f1d-b75696813b23)
+
+Vale lembrar que a página de edição de tarefa consegue se adaptar a um tamanho de tela reduzido. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página de edição de tarefa consegue se adaptar a um tamanho de tela reduzido](https://github.com/user-attachments/assets/636bb049-704a-48f6-86f1-99b41eb1d560)
+
+Nesse ponto, ainda dentro dessa mesma página de edição de tarefa, eu cliquei no botão Confirmar. Assim, eu fui redirecionado para a página principal. Nessa momento, eu constatei que a edição foi bem sucedida, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a edição foi bem sucedida](https://github.com/user-attachments/assets/3c6ff8ba-ed25-456a-aac3-01df6a2e9666)
+
+Vale lembrar que a tarefa que eu editei tem o id igual a 3. Sendo assim, dentro do pgAdmin 4, ao acessar a tabela tarefas, eu constatei que houve alteração no campo descricao correspondente à tarefa cujo id é igual a 3. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que, dentro da tabela tarefas, houve alteração no campo descricao correspondente à tarefa cujo id é igual a 3](https://github.com/user-attachments/assets/1bab04e3-28dc-4ff4-b8dc-cf3f619c90d7)
+
+De volta ao navegador, ainda dentro da página principal da aplicação web, eu cliquei no botão Excluir que corresponde à tarefa cuja descrição é Ler um livro. Desse modo, eu fui direcionado para a página de exclusão de tarefa. A captura de tela abaixo mostra como se encontrava a página de exclusão de tarefa correspondente à tarefa cuja descrição é Ler um livro.
+
+![Essa captura de tela mostra como se encontrava a página de exclusão de tarefa correspondente à tarefa cuja descrição é Ler um livro](https://github.com/user-attachments/assets/a43ebfb2-7b04-4ac5-b2d0-aea6e97b8b6a)
+
+Vale lembrar que a página de exclusão de tarefa consegue se adaptar a um tamanho de tela reduzido. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a página de exclusão de tarefa consegue se adaptar a um tamanho de tela reduzido](https://github.com/user-attachments/assets/5bcc6bf6-bf4b-4091-a405-7e55045e7964)
+
+Nesse ponto, ainda dentro dessa mesma página de exclusão de tarefa, eu cliquei no botão Confirmar. Assim, eu fui redirecionado para a página principal. Nessa momento, eu constatei que a exclusão foi bem sucedida, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que a exclusão foi bem sucedida](https://github.com/user-attachments/assets/0e88fd5a-e928-462f-8ace-d70d63015ff3)
+
+Vale lembrar que a tarefa que eu excluí tinha o id igual a 2. Sendo assim, dentro do pgAdmin 4, ao acessar a tabela tarefas, eu constatei que foi removido o registro correspondente à tarefa cujo id era igual a 2. Isso pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que, dentro da tabela tarefas, foi removido o registro correspondente à tarefa cujo id era igual a 2](https://github.com/user-attachments/assets/c4dcc149-7d57-41e3-9dcf-03254a215c12)
