@@ -221,3 +221,60 @@ Sobre o código Java que eu escrevi para a classe WebConfiguration, vale destaca
 * Eu indiquei que o domínio http://localhost:4200 tem permissão para enviar requisições HTTP do tipo DELETE, do tipo GET e do tipo PUT para qualquer domínio que parta de http://localhost:8080/tarefas/.
 
 Depois que eu escrevi o código Java para a classe WebConfiguration, eu fiz um commit para que a referida classe fosse adicionada dentro do meu repositório chamado projeto-lista-de-tarefas-api-rest. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/commit/f05ee8d42edf0cb58cfa656685fdd441a171e57a>.
+
+## Tópico 4: Testes unitários para validar a API REST
+
+Os subtópicos seguintes relatam as etapas que eu segui para escrever os testes unitários que devem validar a API REST do projeto Lista de tarefas.
+
+### Subtópico 4.1: Classe TarefaRepositoryTest
+
+Dentro da pasta projetolistadetarefasapirest, eu fui até a pasta destinada a testes e criei o pacote repositories contendo a classe TarefaRepositoryTest.
+
+O código Java que eu escrevi para a classe TarefaRepositoryTest pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/blob/main/src/test/java/com/projetolistadetarefasapirest/repositories/TarefaRepositoryTest.java>. Cabe ressaltar que o código Java que eu escrevi para a classe TarefaRepositoryTest está hospedado no meu repositório chamado projeto-lista-de-tarefas-api-rest.
+
+Sobre o código Java que eu escrevi para a classe TarefaRepositoryTest, vale destacar que:
+
+* A classe TarefaRepositoryTest contém os testes unitários que devem validar a classe TarefaRepository.
+* Por meio da anotação @DataJpaTest, eu indiquei que a classe TarefaRepositoryTest testará um repositório JPA.
+* Cada anotação @DisplayName me permite deixar os relatórios de teste mais compreensíveis.
+* Eu anotei todos os métodos da classe TarefaRepositoryTest com @Test. Assim, eu indiquei que todos os métodos de TarefaRepositoryTest são métodos de teste.
+
+Depois que eu escrevi o código Java para a classe TarefaRepositoryTest, eu fiz um commit para que a referida classe fosse adicionada dentro do meu repositório chamado projeto-lista-de-tarefas-api-rest. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/commit/8dd5a11a91a2f9bfccf3251ccff22ec6966301ee>.
+
+Subtópico 4.2: Classe TarefaServiceTest
+Dentro da pasta projetolistadetarefasapirest, eu fui até a pasta destinada a testes e criei o pacote services contendo a classe TarefaServiceTest.
+
+O código Java que eu escrevi para a classe TarefaServiceTest pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/blob/main/src/test/java/com/projetolistadetarefasapirest/services/TarefaServiceTest.java>. Cabe ressaltar que o código Java que eu escrevi para a classe TarefaServiceTest está hospedado no meu repositório chamado projeto-lista-de-tarefas-api-rest.
+
+Sobre o código Java que eu escrevi para a classe TarefaServiceTest, vale destacar que:
+
+* A classe TarefaServiceTest contém os testes unitários que devem validar a classe TarefaService.
+* Por meio da anotação @SpringBootTest, eu indiquei que TarefaServiceTest é uma classe de teste que precisa de recursos do Spring Boot.
+* Por meio da anotação @MockBean, eu criei um mock da interface TarefaRepository. Com esse mock e com o auxílio da classe Mockito, eu consegui simular o comportamento do repositório.
+* Dentro do método deveBuscarTodasAsTarefasComSucesso, eu chamei o método toString da classe TarefaDTO para comparar dois objetos da classe TarefaDTO por meio do valor de seus atributos. Por isso eu sobrescrevi o método toString quando eu criei a classe TarefaDTO.
+
+Depois que eu escrevi o código Java para a classe TarefaServiceTest, eu fiz um commit para que a referida classe fosse adicionada dentro do meu repositório chamado projeto-lista-de-tarefas-api-rest. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/commit/a898921297310721a5106ba58f662159139329ad>.
+
+### Subtópico 4.3: Classe TarefaControllerTest
+
+Dentro da pasta projetolistadetarefasapirest, eu fui até a pasta destinada a testes e criei o pacote controllers contendo a classe TarefaControllerTest.
+
+O código Java que eu escrevi para a classe TarefaControllerTest pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/blob/main/src/test/java/com/projetolistadetarefasapirest/controllers/TarefaControllerTest.java>. Cabe ressaltar que o código Java que eu escrevi para a classe TarefaControllerTest está hospedado no meu repositório chamado projeto-lista-de-tarefas-api-rest.
+
+Sobre o código Java que eu escrevi para a classe TarefaControllerTest, vale destacar que:
+
+* A classe TarefaControllerTest contém os testes unitários que devem validar a classe TarefaController.
+* Por meio da anotação @WebMvcTest(TarefaController.class), eu indiquei que os testes relativos ao controlador TarefaController devem se restringir à camada web.
+* A classe MockMvc me permite trabalhar com objetos de solicitação e resposta simulados.
+
+Depois que eu escrevi o código Java para a classe TarefaControllerTest, eu fiz um commit para que a referida classe fosse adicionada dentro do meu repositório chamado projeto-lista-de-tarefas-api-rest. Tal commit pode ser visto através do link <https://github.com/lorenzofernandesaguiar/projeto-lista-de-tarefas-api-rest/commit/4074c37ad20924b01ffdb1461aa75eff7ca26315>.
+
+### Subtópico 4.4: Rodando os testes unitários para validar a API REST
+
+Dentro do meu workspace do Spring Tool Suite, eu tomei providências para que os testes unitários escritos ao longo dos tópicos anteriores fossem rodados com o perfil default.
+
+Cabe ressaltar que foi necessária uma conexão com um banco de dados para a realização dos testes unitários relativos ao repositório da API REST. Sabendo disso, eu anotei a classe TarefaRepositoryTest com @DataJpaTest. Assim, eu fiz com que o Spring Boot automaticamente configurasse um banco de dados incorporado para o repositório da API REST. Esse banco de dados foi o H2 Database.
+
+Todos os testes obtiveram sucesso, conforme pode ser visto na captura de tela abaixo.
+
+![Essa captura de tela mostra que foram bem sucedidos os testes unitários que devem validar a API REST](https://github.com/user-attachments/assets/aebfc4e6-cda5-4914-b16d-5716bf756033)
